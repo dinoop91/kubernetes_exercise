@@ -13,9 +13,9 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: us.icr.io/<my_namespace>/hello-world:1
+        image: dinoopnair/hello-world:1
         ports:
-        - containerPort: 8080
+        - containerPort: 9700
         resources:
           limits:
             cpu: 2m
@@ -24,5 +24,3 @@ spec:
             cpu: 1m
             memory: 10Mi  
         
-      imagePullSecrets:
-        - name: icr

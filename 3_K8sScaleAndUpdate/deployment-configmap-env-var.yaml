@@ -13,11 +13,9 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: us.icr.io/<my_namespace>/hello-world:3
+        image: dinoopnair/hello-world:3
         ports:
-        - containerPort: 8080
+        - containerPort: 9700
         envFrom:
         - configMapRef:
             name: app-config
-      imagePullSecrets:
-        - name: icr
